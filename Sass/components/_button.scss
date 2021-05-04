@@ -1,0 +1,57 @@
+.btn {
+  padding: 1.25rem 3rem;
+  border-radius: 5rem;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in;
+    &:last-child {
+      top: 100%;
+      transform: translate(-50%, 0);
+      opacity: 0;
+    }
+  }
+  &:hover,
+  &:active {
+    opacity: 0.9;
+    span {
+      opacity: 0;
+      &:last-child {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
+  }
+  &--middle {
+    font-size: 0.9rem;
+    padding: 1.5rem 7rem;
+  }
+  &--big {
+    font-size: 0.9rem;
+    padding: 2rem 8rem;
+    white-space: nowrap;
+  }
+  &--pink {
+    background-color: rgba(#ee4266, 1);
+    &:hover {
+      background-color: rgba(#ee4266, 0.6);
+    }
+  }
+  &--purple {
+    background-color: rgba(#540d6e, 0.8);
+    &:hover {
+      background-color: rgba(#540d6e, 0.6);
+    }
+  }
+}

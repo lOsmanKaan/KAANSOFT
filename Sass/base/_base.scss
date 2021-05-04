@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} /*
+mobile portrait - 0 - 375px
+mobile landscape - 376px - 480px
+tablet portrait - 481px - 768px
+tablet landscape & small laptop  - 769px - 1024px
+generic laptop & desktop  - 1025 - 1200px
+large screen - 1825px+
+*/
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  @include respond(t-landscape) {
+    font-size: 90%;
+  }
+  @include respond(l-landscape) {
+    font-size: 150%;
+  }
+
+  @media only screen and(min-width:1825px) {
+    font-size: 150%; /* 1 rem 24px */
+  }
+}
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-font-1;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #eee;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $color-primary;
+}
+.none {
+  display: none;
+}

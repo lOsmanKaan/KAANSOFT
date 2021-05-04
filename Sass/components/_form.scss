@@ -1,0 +1,41 @@
+.form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &__heading {
+    padding: 6px 0;
+    font-family: $font-secondary;
+    font-weight: 200;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-primary;
+    text-align: center;
+  }
+  &__input {
+    font-family: $font-secondary;
+    font-size: 1.1rem;
+    width: 80%;
+    padding: 0.8rem 1rem;
+    border: none;
+    border: 1px solid $color-primary;
+    transition: all 0.1s;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $color-primary;
+    }
+  }
+
+  &__message {
+    resize: none;
+  }
+  &__error {
+    color: red;
+    text-align: left;
+  }
+}

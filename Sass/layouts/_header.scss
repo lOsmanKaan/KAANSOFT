@@ -1,0 +1,44 @@
+/* Header */
+.header {
+  width: 100%;
+  min-height: 8rem; /* 8 * 16px = 128px */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  @media only screen and(min-width:1825px) {
+    background-color: rgba(#63b7e8, 0.2);
+    margin-bottom: 4rem;
+  }
+  &__logo {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    @media only screen and(max-width:1200px) {
+      left: 15%;
+    }
+    @media only screen and(max-width:730px) {
+      left: 25%;
+    }
+    @media only screen and(max-width:430px) {
+      left: 30%;
+      height: 90%;
+    }
+    @media only screen and(min-width:1825px) {
+      left: 13%;
+    }
+  }
+  &__social-nav {
+    position: absolute;
+    right: 20%;
+    top: 1%;
+    @media only screen and(max-width:760px) {
+      right: 1%;
+    }
+    @media only screen and(min-width:1825px) {
+      right: 15%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.backtoTop {
+  position: relative;
+  span {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 1;
+    i {
+      font-size: 3rem;
+      padding: 4px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      color: $color-black;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

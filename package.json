@@ -1,0 +1,18 @@
+{
+  "name": "kaansoft",
+  "version": "1.0.0",
+  "description": "KAANSOFT Web Sayfası",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass Sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "Front-End Developer",
+    "Software"
+  ],
+  "author": "Osman Kaan Çakmakcı",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

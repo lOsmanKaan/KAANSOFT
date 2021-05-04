@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAANSOFT Web Sitesi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&family=Open+Sans:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/Logo-icon.png" type="image/icon" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header" id="header">
+        <a href="index.html">
+          <img
+            srcset="img/Logo-Vektör.png 205w, img/Logo-Vektör.png 180w"
+            sizes="(min-width:1024px) 205px,180px"
+            src="img/Logo-Vektör.png"
+            alt="logo"
+            class="header__logo"
+        /></a>
+
+        <div class="navigation" id="nav">
+          <i class="fas fa-bars navigation__bar" id="bar"></i>
+          <nav class="nav-top">
+            <ul class="nav-top__list">
+              <li>
+                <a href="index.html" class="nav-top__link">Anasayfa</a>
+              </li>
+              <li>
+                <a href="#about" class="nav-top__link">Hakkımızda</a>
+              </li>
+              <li>
+                <a href="#hizmet" class="nav-top__link">Hizmetlerimiz</a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-top__link">Blog</a>
+              </li>
+              <li>
+                <a href="contact.html" class="nav-top__link">İletişim</a>
+              </li>
+            </ul>
+            <button class="btn"><span>Giriş</span><span>Giriş</span></button>
+          </nav>
+          <div class="none" id="none">
+            <nav class="nav-bottom" id="navbar">
+              <ul class="nav-bottom__list">
+                <li>
+                  <a href="index.html" class="nav-bottom__link">Anasayfa</a>
+                </li>
+                <li>
+                  <a href="#about"" class="nav-bottom__link">Hakkımızda</a>
+                </li>
+                <li>
+                  <a href="#hizmet" class="nav-bottom__link">Hizmetlerimiz</a>
+                </li>
+                <li>
+                  <a href="#blog" class="nav-bottom__link">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="nav-bottom__link">İletişim</a>
+                </li>
+              </ul>
+              <div class="sd">
+                <button class="btn btn--middle">
+                  <span>Giriş</span><span>Giriş</span>
+                </button>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="header__social-nav">
+          <nav class="social-nav">
+            <ul class="social-nav__list">
+              <li>
+                <a href="#" class="social-nav__link"
+                  ><i class="fab fa-twitter social-nav__icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-nav__link"
+                  ><i class="fab fa-github social-nav__icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-nav__link"
+                  ><i class="fab fa-linkedin-in social-nav__icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-nav__link"
+                  ><i class="fab fa-whatsapp social-nav__icon"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-nav__link"
+                  ><i class="fab fa-instagram social-nav__icon"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="sec-info">
+        <div class="sec-info__container">
+          <div class="sec-info__left">
+            <h1 class="t1">
+              <span>İşinizi büyütmede</span>
+              <span>size yardımcı olmak için</span>
+              <span>akıllı yazılımlar geliştiriyoruz</span>
+            </h1>
+            <p class="t4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              deleniti, quidem dignissimos quasi, a quia distinctio, fugit
+              veniam aliquam nemo modi quibusdam. Repellendus exercitationem
+              fugit veritatis. Minus vitae aliquid iusto maiores nobis?
+              Explicabo a.
+            </p>
+            <button class="btn btn--middle">
+              <span>Devam</span><span>Devam</span>
+            </button>
+          </div>
+          <div class="sec-info__right">
+            <img
+              srcset="
+                img/sec-1.png 2000w,
+                img/sec-1.png 1000w,
+                img/sec-1.png  500w
+              "
+              sizes="(max-width:480px) 300px, (max-width:768px) 1000px,2000px"
+              src="img/sec-1.png"
+              alt="info-img"
+              class="sec-info__img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="sec-features" id="about">
+        <div class="sec-features__top">
+          <h1 class="t2">Ne Yapıyoruz ?</h1>
+          <p class="t4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            sint, aliquid quasi delectus minus placeat distinctio nemo laborum
+            nisi eligendi totam ratione! Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <div class="sec-features__bottom">
+          <div class="sec-features__feature">
+            <i class="fas fa-laptop-code fa-3x sec-features__icon"></i>
+            <h2 class="t3 sec-features__heading">
+              Kurumsal Yazılım Sistemleri
+            </h2>
+            <p class="s1 sec-features__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+              deserunt porro debitis illo ab! Corporis neque tempora reiciendis
+              laboriosam iure, enim quidem maxime? Quisquam, quam?
+            </p>
+          </div>
+          <div class="sec-features__feature">
+            <i class="fas fa-search-plus fa-3x sec-features__icon"></i>
+            <h2 class="t3 sec-features__heading">Seo Hizmetleri</h2>
+            <p class="s1 sec-features__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+              deserunt porro debitis illo ab! Corporis neque tempora reiciendis
+              laboriosam iure, enim quidem maxime? Quisquam, quam?
+            </p>
+          </div>
+          <div class="sec-features__feature">
+            <i class="fas fa-code fa-3x sec-features__icon"></i>
+            <h2 class="t3 sec-features__heading">Web Tasarımı</h2>
+            <p class="s1 sec-features__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+              deserunt porro debitis illo ab! Corporis neque tempora reiciendis
+              laboriosam iure, enim quidem maxime? Quisquam, quam?
+            </p>
+          </div>
+          <div class="sec-features__feature">
+            <i class="fas fa-spinner fa-3x sec-features__icon"></i>
+            <h2 class="t3 sec-features__heading">E-Ticaret Çözümleri</h2>
+            <p class="s1 sec-features__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+              deserunt porro debitis illo ab! Corporis neque tempora reiciendis
+              laboriosam iure, enim quidem maxime? Quisquam, quam?
+            </p>
+          </div>
+          <div class="sec-features__feature">
+            <i class="fas fa-mobile-alt fa-3x sec-features__icon"></i>
+            <h2 class="t3 sec-features__heading">Mobil Uygulama Geliştirme</h2>
+            <p class="s1 sec-features__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+              deserunt porro debitis illo ab! Corporis neque tempora reiciendis
+              laboriosam iure, enim quidem maxime? Quisquam, quam?
+            </p>
+          </div>
+          <div class="sec-features__feature">
+            <i class="fas fa-database fa-3x sec-features__icon"></i>
+            <h2 class="t3 sec-features__heading">Veri Tabanı Optimizasyonu</h2>
+            <p class="s1 sec-features__p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+              deserunt porro debitis illo ab! Corporis neque tempora reiciendis
+              laboriosam iure, enim quidem maxime? Quisquam, quam?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sec-workflow" id="hizmet">
+        <div class="sec-workflow__top">
+          <h1 class="t2">Nasıl Yapıyoruz ?</h1>
+          <p class="t4 t4__res">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non,
+            placeat. Quod iste minima enim animi, sed minus autem qui, nisi
+            voluptas officia sit ad vero.
+          </p>
+        </div>
+        <div class="sec-workflow__bottom">
+          <div class="sec-workflow__left">
+            <div class="sec-workflow__box">
+              <div class="sec-workflow__heading">
+                <h2 class="t3 t3--letter u-text-align-right">
+                  1- Toplantı Yapıyoruz
+                </h2>
+              </div>
+              <i
+                class="far fa-handshake fa-3x sec-workflow__icon u-float-right"
+              ></i>
+              <p class="s1 sec-workflow__p u-text-align-right">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In,
+                corrupti.
+              </p>
+            </div>
+            <div class="sec-workflow__box"></div>
+            <div class="sec-workflow__box">
+              <div class="sec-workflow__heading">
+                <h2 class="t3 t3--letter u-text-align-right">
+                  3- Tasarlıyoruz
+                </h2>
+              </div>
+
+              <i class="fas fa-code fa-3x sec-workflow__icon u-float-right"></i>
+              <p class="s1 sec-workflow__p u-text-align-right">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In,
+                corrupti.
+              </p>
+            </div>
+            <div class="sec-workflow__box"></div>
+            <div class="sec-workflow__box">
+              <div class="sec-workflow__heading">
+                <h2 class="t3 t3--letter u-text-align-right">
+                  5- Teslim Ediyoruz
+                </h2>
+              </div>
+
+              <i
+                class="fas fa-check fa-3x sec-workflow__icon u-float-right"
+              ></i>
+              <p class="s1 sec-workflow__p u-text-align-right">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In,
+                corrupti.
+              </p>
+            </div>
+          </div>
+          <div class="sec-workflow__line-box">
+            <div class="sec-workflow__line">
+              <span class="sec-workflow__circle"></span>
+              <span class="sec-workflow__circle"></span>
+              <span class="sec-workflow__circle"></span>
+              <span class="sec-workflow__circle"></span>
+              <span class="sec-workflow__circle"></span>
+            </div>
+          </div>
+          <div class="sec-workflow__right">
+            <div class="sec-workflow__box"></div>
+            <div class="sec-workflow__box">
+              <div class="sec-workflow__heading">
+                <h2 class="t3 t3--letter">2- Planlıyoruz</h2>
+              </div>
+
+              <i class="far fa-map fa-3x sec-workflow__icon"></i>
+              <p class="s1 sec-workflow__p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In,
+                corrupti.
+              </p>
+            </div>
+            <div class="sec-workflow__box"></div>
+            <div class="sec-workflow__box">
+              <div class="sec-workflow__heading">
+                <h2 class="t3 t3--letter">4- Kodluyor ve Test Ediyoruz</h2>
+              </div>
+              <i class="fas fa-code fa-3x sec-workflow__icon"></i>
+              <p class="s1 sec-workflow__p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In,
+                corrupti.
+              </p>
+            </div>
+            <div class="sec-workflow__box"></div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-counter" id="blog">
+        <div class="sec-counter__container">
+          <div class="sec-counter__top">
+            <h1 class="t2">Neler Yaptık ?</h1>
+            <p class="t4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam eos
+              praesentium excepturi saepe optio quo dolor harum minus fugiat,
+              assumenda tempore sint accusamus velit nam numquam! Ea nemo dolore
+              quia.
+            </p>
+          </div>
+          <div class="sec-counter__bottom">
+            <div class="counter">
+              <i class="fas fa-user counter__icon"></i>
+              <span class="counter__num">155</span>
+              <p class="counter__name">Mutlu Müşteri</p>
+            </div>
+            <div class="counter">
+              <i class="far fa-smile counter__icon"></i>
+              <span class="counter__num">155</span>
+              <p class="counter__name">Tamamlanan Proje</p>
+            </div>
+            <div class="counter">
+              <i class="far fa-bell counter__icon"></i>
+              <span class="counter__num">155</span>
+              <p class="counter__name">Referans</p>
+            </div>
+            <div class="counter">
+              <i class="fas fa-users counter__icon"></i>
+              <span class="counter__num">155</span>
+              <p class="counter__name">Aktif Müşteri</p>
+            </div>
+          </div>
+          <button class="btn btn--middle">
+            <span>Detaylar</span>
+            <span>Detaylar</span>
+          </button>
+        </div>
+      </section>
+      <section class="sec-card">
+        <h1 class="t2 t2--green">Hosting Paketlerimiz</h1>
+        <div class="sec-card__cards">
+          <div class="card">
+            <div class="card__top card--pink">
+              <i class="far fa-grin-stars card__icon"></i>
+              <div class="card__texts">
+                <span class="card__title">Ekonomik</span>
+                <span class="card__price">1800 <sup>TL</sup></span>
+                <span class="card__text">Yıllık</span>
+              </div>
+            </div>
+            <div class="card__bottom">
+              <ul class="card__list">
+                <li class="card__item">
+                  <span>SSD Disk</span><span>1 GB</span>
+                </li>
+                <li class="card__item">
+                  <span>Sub Domain</span><span>3 Adet</span>
+                </li>
+                <li class="card__item">
+                  <span>Trafik</span><span>80 GB</span>
+                </li>
+                <li class="card__item"><span>CPU</span><span>1 Core</span></li>
+              </ul>
+              <button class="btn btn--middle btn--pink">
+                <span>SATIN AL</span><span>SATIN AL</span>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <i class="far fa-star card__icon"></i>
+              <div class="card__texts">
+                <span class="card__title">Profesyonel</span>
+                <span class="card__price">2700 <sup>TL</sup></span>
+                <span class="card__text">Yıllık</span>
+              </div>
+            </div>
+            <div class="card__bottom">
+              <ul class="card__list">
+                <li class="card__item">
+                  <span>SSD Disk</span><span>5 GB</span>
+                </li>
+                <li class="card__item">
+                  <span>Sub Domain</span><span>10 Adet</span>
+                </li>
+                <li class="card__item">
+                  <span>Trafik</span><span>200 GB</span>
+                </li>
+                <li class="card__item"><span>CPU</span><span>2 Core</span></li>
+              </ul>
+              <button class="btn btn--middle">
+                <span>SATIN AL</span><span>SATIN AL</span>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top card--purple">
+              <i class="far fa-gem card__icon"></i>
+              <div class="card__texts">
+                <span class="card__title">Premium</span>
+                <span class="card__price">4500 <sup>TL</sup></span>
+                <span class="card__text">Yıllık</span>
+              </div>
+            </div>
+            <div class="card__bottom">
+              <ul class="card__list">
+                <li class="card__item">
+                  <span>SSD Disk</span><span>Sınırsız</span>
+                </li>
+                <li class="card__item">
+                  <span>Sub Domain</span><span>Sınırsız</span>
+                </li>
+                <li class="card__item">
+                  <span>Trafik</span><span>Sınırsız</span>
+                </li>
+                <li class="card__item"><span>CPU</span><span>4 Core</span></li>
+              </ul>
+              <button class="btn btn--middle btn--purple">
+                <span>SATIN AL</span><span>SATIN AL</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-idea">
+        <h1 class="sec-idea__text">Aklınızda bir fikir mi var ?</h1>
+        <button class="btn btn--big">
+          <span>Bizimle Paylaş</span><span>Bizimle Paylaş</span>
+        </button>
+      </section>
+      <section class="sec-comment">
+        <div class="sec-comment__top">
+          <h1 class="t2 t2--white">Müşterilerimizin Yorumları</h1>
+        </div>
+        <div class="sec-comment__bottom">
+          <div class="comment">
+            <img src="img/xd.jpeg" class="comment__img" alt="person" />
+            <div class="comment__shadow">
+              <div class="comment__content">
+                <div class="comment__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Nulla a vitae quod officiis quaerat repellendus nostrum odio
+                  voluptatum, quis non culpa itaque nemo aliquid nihil quia,
+                  minima in facilis voluptate!
+                </div>
+                <div class="comment__author">Osman K. Çakmakcı</div>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <img src="img/xd.jpeg" class="comment__img" alt="person" />
+            <div class="comment__shadow">
+              <div class="comment__content">
+                <div class="comment__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Nulla a vitae quod officiis quaerat repellendus nostrum odio
+                  voluptatum, quis non culpa itaque nemo aliquid nihil quia,
+                  minima in facilis voluptate!
+                </div>
+                <div class="comment__author">Osman K. Çakmakcı</div>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <img src="img/xd.jpeg" class="comment__img" alt="person" />
+            <div class="comment__shadow">
+              <div class="comment__content">
+                <div class="comment__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Nulla a vitae quod officiis quaerat repellendus nostrum odio
+                  voluptatum, quis non culpa itaque nemo aliquid nihil quia,
+                  minima in facilis voluptate!
+                </div>
+                <div class="comment__author">Osman K. Çakmakcı</div>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <img src="img/xd.jpeg" class="comment__img" alt="person" />
+            <div class="comment__shadow">
+              <div class="comment__content">
+                <div class="comment__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Nulla a vitae quod officiis quaerat repellendus nostrum odio
+                  voluptatum, quis non culpa itaque nemo aliquid nihil quia,
+                  minima in facilis voluptate!
+                </div>
+                <div class="comment__author">Osman K. Çakmakcı</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__contact">
+            <div class="contact-info">
+              <ul class="contact-info__list">
+                <li class="contact-info__item">
+                  <i class="fas fa-map-marker-alt contact-info__icon"></i>
+                  <span>Beşiktaş / İstanbul</span>
+                </li>
+                <li class="contact-info__item">
+                  <i class="fas fa-phone contact-info__icon"></i>
+                  <span>0212 444 44 44</span>
+                </li>
+                <li class="contact-info__item">
+                  <i class="fas fa-mobile-alt contact-info__icon"></i>
+                  <span>0544 444 44 44</span>
+                </li>
+                <li class="contact-info__item">
+                  <i class="fas fa-envelope contact-info__icon"></i>
+                  <span>CakmakciKaan@outlook.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div class="footer__container">
+              <h4 class="footer__header">
+                Hakkımızda <span class="footer__underline"></span>
+              </h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">item - 1</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">item - 2</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">item - 3</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__container">
+              <h4 class="footer__header">
+                Şirket <span class="footer__underline"></span>
+              </h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">item - 1</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">item - 2</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">item - 3</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__container">
+              <h4 class="footer__header">
+                Kaynaklar <span class="footer__underline"></span>
+              </h4>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">item - 1</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">item - 2</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">item - 3</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__container">
+              <h4 class="footer__header">
+                Bize Ulaşın <span class="footer__underline"></span>
+              </h4>
+              <nav class="social-nav social-nav--big">
+                <ul class="social-nav__list">
+                  <li class="social-nav__item">
+                    <a href="#" class="social-nav__link"
+                      ><i class="fab fa-twitter social-nav__icon"></i
+                    ></a>
+                  </li>
+                  <li class="social-nav__item">
+                    <a href="#" class="social-nav__link"
+                      ><i class="fab fa-github social-nav__icon"></i
+                    ></a>
+                  </li>
+                  <li class="social-nav__item">
+                    <a href="#" class="social-nav__link"
+                      ><i class="fab fa-linkedin-in social-nav__icon"></i
+                    ></a>
+                  </li>
+                  <li class="social-nav__item">
+                    <a href="#" class="social-nav__link"
+                      ><i class="fab fa-whatsapp social-nav__icon"></i
+                    ></a>
+                  </li>
+                  <li class="social-nav__item">
+                    <a href="#" class="social-nav__link"
+                      ><i class="fab fa-instagram social-nav__icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            Osman Kaan Çakmakcı - Front-End Developer
+          </p>
+        </div>
+      </footer>
+      <div class="backtoTop none" id="toTop">
+        <span><i class="fas fa-angle-up"></i></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

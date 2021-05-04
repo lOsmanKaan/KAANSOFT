@@ -1,0 +1,70 @@
+.comment {
+  height: 21rem;
+  width: 20%;
+  position: relative;
+  @media only screen and(max-width:1024px) {
+    width: 35%;
+  }
+  @media only screen and(max-width:480px) {
+    width: 55%;
+  }
+  @media only screen and(max-width:375px) {
+    width: 75%;
+  }
+
+  &__content {
+    height: 100%;
+    padding: 4rem 1rem;
+    background-color: rgba($color-white, 0.8);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 25% 100%, 0 75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::before {
+      content: url("../img/left-quote.png");
+      transform: scale(0.7);
+      position: absolute;
+      opacity: 0.4;
+      left: 3%;
+      top: 3%;
+    }
+  }
+  &__shadow {
+    height: 100%;
+    -webkit-filter: drop-shadow(-1px 6px 3px rgba(#323200, 0.5));
+    filter: drop-shadow(-1px 6px 3px rgba(#323200, 0.5));
+  }
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: -4px 3px 4px 3px rgba($color-black, 0.3);
+    position: absolute;
+    right: 5%;
+    top: -7%;
+    z-index: 1;
+  }
+  &__text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #504f4f;
+    text-align: justify;
+  }
+  &__author {
+    font-family: $font-secondary;
+    font-weight: 200;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-align: right;
+  }
+  &:nth-child(2n) {
+    align-self: flex-end;
+    @media only screen and(max-width:768px) {
+      align-self: flex-start;
+    }
+    @media only screen and(max-width:480px) {
+      align-self: center;
+    }
+  }
+}
